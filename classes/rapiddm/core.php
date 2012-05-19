@@ -11,7 +11,7 @@
 class RapidDM_Core {
 
 	// Current version
-	const VERSION = '0.1-dev';
+	const VERSION = '0.1';
 
 	/**
 	 * Loads RapidDM database connections
