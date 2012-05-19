@@ -21,7 +21,7 @@ class RapidDM_Core {
 	 */
 	public static function config(array $groups)
 	{
-		$config = Kohana::config('database');
+		$config = Kohana::$config->load('database');
 
 		foreach ($groups as $name)
 		{
