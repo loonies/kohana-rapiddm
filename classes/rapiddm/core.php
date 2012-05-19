@@ -11,7 +11,7 @@
 class RapidDM_Core {
 
 	// Current version
-	const VERSION = '0.1-dev';
+	const VERSION = '0.1';
 
 	/**
 	 * Loads RapidDM database connections
@@ -21,7 +21,7 @@ class RapidDM_Core {
 	 */
 	public static function config(array $groups)
 	{
-		$config = Kohana::config('database');
+		$config = Kohana::$config->load('database');
 
 		foreach ($groups as $name)
 		{
